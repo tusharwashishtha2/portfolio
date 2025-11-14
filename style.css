@@ -377,6 +377,7 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
 .ci-loc { background-image:url('data:image/svg+xml;utf8,<svg fill="none" stroke="goldenrod" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20"><circle cx="12" cy="11" r="3.5" /><path d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42M16.24 19.78l1.42-1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M19.78 4.22l-1.42 1.42" /></svg>'); }
 @media (max-width:600px){.contact-pro{padding:11px 5px 13px 5px;}}
 
+/* ----- ABOUT SECTION (image beside, centered, justified text, centered heading and buttons) ----- */
 .about-centered {
   display: flex;
   justify-content: center;
@@ -423,6 +424,10 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
   font-weight: 500;
   letter-spacing: 0.01em;
   word-break: break-word;
+  transition: box-shadow 0.22s;
+}
+.about-intro:hover {
+  box-shadow: 0 14px 48px #ffdba7c7;
 }
 .about-bottom-center {
   display: flex;
@@ -452,6 +457,3 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
 @media (max-width:600px){
   .about-intro { font-size: 1em; padding: 13px 7px; }
 }
-
-
-
