@@ -40,7 +40,15 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     border-right: 2px solid #d4a574;
     padding-right: 8px;
 }
-.hero-intro {font-size:17px;color:#ededed;margin:16px 0 0 0;max-width:510px;line-height:1.6;}
+.hero-intro {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  font-size: 17px;
+  color: #ededed;
+  margin: 16px 0 0 0;
+  max-width: 510px;
+  line-height: 1.6;
 .hero-buttons { display:flex; gap:16px; margin-top:18px;}
 .btn-primary, .btn-secondary, .btn-download {
     padding: 13px 30px; border: none; border-radius: 30px; font-size: 16px; font-weight: 600;
@@ -537,3 +545,4 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     visibility: hidden;
   }
 }
+
