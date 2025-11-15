@@ -447,37 +447,50 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
 }
 @media (max-width: 700px) {
   .navbar {
-    padding: 10px 0 10px 0;
+    padding: 6px 0 14px 0;
     position: fixed; top: 0; left: 0; width: 100vw; z-index: 1000;
     background: linear-gradient(135deg,#171617 0%,#262626 90%);
-    display: flex;
-    justify-content: center;
+    box-shadow: 0 3px 14px #0006, 0 0.5px 4px #f8e0b040;
+    border-bottom: 1.5px solid #ffe2be1f;
+    display: block;
   }
   .nav-links {
-    gap: 10px;
+    display: flex;
     flex-wrap: wrap;
-    padding: 0 4vw;
-    width: 100vw;
+    gap: 0;
     justify-content: center;
-    align-items: center;
+    width: 100vw;
+  }
+  .nav-links li {
+    flex: 1 1 48vw;
+    text-align: center;
+    margin: 2px 0;
+    min-width: 88px;
+    max-width: 49vw;
   }
   .nav-links a {
-    font-size: 15px;
-    padding: 7px 0;
-    text-align: center;
-    min-width: 95px;
-    display: inline-block;
-    word-break: keep-all;
+    font-size: 15.2px;
+    padding: 9px 0;
+    display: block;
+    width: 100%;
+    border-radius: 11px;
+    transition: background 0.18s;
   }
-  section {
-    padding-top: 72px !important; 
-    padding-bottom: 20px;
+  .nav-links a.active,
+  .nav-links a:focus,
+  .nav-links a:hover {
+    color: #f1c385;
+    background: #23222899;
+  }
+  section { 
+    padding-top: 71px !important;
+    padding-bottom: 22px;
     min-height: unset;
   }
   .container,
   .glass, .skills-content, .about-content, .projects-grid, .services-grid {
     max-width: 99vw;
-    padding: 10px 2vw !important;
+    padding: 12px 2vw !important;
     box-sizing: border-box;
   }
   .hero-container, .about-flexwrap {
@@ -502,16 +515,20 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
   .about-intro {
     font-size: 1em;
     padding: 12px 8px;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
   }
-
+  
   [id]::before {
     content: "";
     display: block;
-    height: 65px;
-    margin-top: -65px;
+    height: 66px;
+    margin-top: -66px;
     visibility: hidden;
   }
 }
+
 
 
 
