@@ -377,7 +377,6 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
 .ci-loc { background-image:url('data:image/svg+xml;utf8,<svg fill="none" stroke="goldenrod" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="2 2 20 20"><circle cx="12" cy="11" r="3.5" /><path d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42M16.24 19.78l1.42-1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M19.78 4.22l-1.42 1.42" /></svg>'); }
 @media (max-width:600px){.contact-pro{padding:11px 5px 13px 5px;}}
 
-/* ----- ABOUT SECTION (image beside, centered, justified text, centered heading and buttons) ----- */
 .about-centered {
   display: flex;
   justify-content: center;
@@ -448,23 +447,31 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
 }
 @media (max-width: 700px) {
   .navbar {
-    padding: 11px 0 11px 0;
-    position: fixed;
-    top: 0; left: 0; width: 100vw; z-index: 1000;
+    padding: 10px 0 10px 0;
+    position: fixed; top: 0; left: 0; width: 100vw; z-index: 1000;
     background: linear-gradient(135deg,#171617 0%,#262626 90%);
+    display: flex;
+    justify-content: center;
   }
   .nav-links {
-    gap: 7px;
+    gap: 10px;
     flex-wrap: wrap;
-    padding: 0 2vw;
+    padding: 0 4vw;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
   }
   .nav-links a {
     font-size: 15px;
     padding: 7px 0;
+    text-align: center;
+    min-width: 95px;
+    display: inline-block;
+    word-break: keep-all;
   }
   section {
-    padding-top: 66px !important;  /* This ensures content starts under navbar */
-    padding-bottom: 22px;
+    padding-top: 72px !important; 
+    padding-bottom: 20px;
     min-height: unset;
   }
   .container,
@@ -473,7 +480,39 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     padding: 10px 2vw !important;
     box-sizing: border-box;
   }
+  .hero-container, .about-flexwrap {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+  }
+  .hero-image,
+  .about-image {
+    width: 100% !important;
+    justify-content: center;
+    margin-bottom: 6px;
+  }
+  .about-block,
+  .about-text,
+  .about-intro,
+  .personal-info {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+  .about-intro {
+    font-size: 1em;
+    padding: 12px 8px;
+  }
+
+  [id]::before {
+    content: "";
+    display: block;
+    height: 65px;
+    margin-top: -65px;
+    visibility: hidden;
+  }
 }
+
 
 
 
