@@ -47,8 +47,6 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     letter-spacing: 1px; cursor:pointer; transition: all 0.3s;
 }
 
-
-/* ---- CV BUTTON for About Section ---- */
 .cv-btn-bar {
   margin-top: 30px;
   display: flex;
@@ -92,7 +90,6 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
   .btn-download { width:95vw; max-width:290px;}
 }
 
-/* ---- ABOUT SECTION (image left, text right, and highlight intro) ---- */
 .about-content {
     display: flex;
     align-items: flex-start;
@@ -100,10 +97,9 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     justify-content: flex-start;
 }
 .about-intro {
-   text-align: justify !important;
-   text-justify: inter-word !important;
-   hyphens: auto;
-   /* ...keep your other styles here... */
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto;
     background: linear-gradient(90deg, #24221d 75%, #2c280f 120%);
     border-radius: 9px;
     padding: 18px 20px;
@@ -120,7 +116,6 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     .about-intro { font-size: 16px; text-align: center;}
 }
 
-/* --- Glassmorphism panels (every section) --- */
 .glass, .skills-content, .floating-form, .about-content, .projects-grid, .services-grid {
     background: rgba(23, 19, 30, 0.58);
     border-radius: 24px;
@@ -130,7 +125,6 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     padding: 34px;
 }
 
-/* --- Education/Certifications left-right with icons and animated fade-in --- */
 .flex-sections {display:flex;gap:40px;align-items:flex-start;}
 .edu-cert-block {flex:1;min-width:250px;}
 .timeline-list, .cert-list {margin:15px 0 0 0; padding-left:1.3em;}
@@ -141,13 +135,11 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
 .icon {font-size:1.35em;margin-right:7px;}
 @media (max-width:900px){.flex-sections{flex-direction:column;gap:18px;}.timeline-list li,.cert-list li{font-size:15px;}}
 
-/* --- Services animated card bloom --- */
 .service-flex{gap:10px;}
 .service-ico {font-size:2em;display:block;margin-bottom:10px;}
 .glowing-card {position:relative;transition:.26s;}
 .glowing-card:hover {box-shadow:0 0 35px #efd38388,0 0 12px #f1c38540;}
 
-/* ----- New Skills Icon Card Grid (instead of percent bars) ----- */
 .skillcard-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -537,6 +529,7 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     visibility: hidden;
   }
 }
+
 
 
 
