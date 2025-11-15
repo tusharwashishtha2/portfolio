@@ -44,10 +44,12 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
-  font-size: 1.08em;
+  font-size: 1.1em;
   line-height: 1.63;
-  margin: 18px 0 0 0;
   color: #ededed;
+  margin: 18px 0 0 0;
+  width: 100%;
+  max-width: none;
   {font-size:17px;color:#ededed;margin:16px 0 0 0;max-width:510px;line-height:1.6;}
   .hero-buttons { display:flex; gap:16px; margin-top:18px;}
   .btn-primary, .btn-secondary, .btn-download {
@@ -537,6 +539,7 @@ section {padding:120px 0 60px 0;min-height:60vh;position:relative;}
     visibility: hidden;
   }
 }
+
 
 
 
